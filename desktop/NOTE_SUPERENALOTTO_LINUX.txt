@@ -1,0 +1,20 @@
+LOTTOINJAVA LINUX - MODULO SUPERENALOTTO
+
+Integrato in questa versione:
+- Pulsante dedicato SuperEnalotto nella finestra desktop.
+- Archivio CSV indipendente da quello del Lotto.
+- Import CSV in modalità sostituzione, deduplica per concorso (o data se manca), backup prima della modifica.
+- Aggiornamento online da due fonti CSV, con unione senza doppioni.
+- Reset con conferma e backup.
+- Analisi post-spia: frequenze, presenza nei cicli e posizione media.
+- Motore statistico: frequenza storica, recenza, presenza nei cicli, co-presenza spia e ritardo.
+- Ciclometria con distanza circolare su 90 numeri.
+- Sestine candidate costruite dal paniere TOP 15.
+- Resoconto unificato e backtest walk-forward.
+
+Percorso dati: ~/.local/share/lottoinjava/superenalotto_archive.csv
+Se XDG_DATA_HOME è impostata, viene usata la cartella XDG_DATA_HOME/lottoinjava.
+I backup vengono salvati nella sottocartella backups.
+
+Verifiche effettuate: parsing sintattico dei sorgenti Java e controllo integrità ZIP.
+Non è stato possibile eseguire il package Maven completo in questo ambiente: Maven e le dipendenze JavaFX non sono installati e l'accesso ai repository non è disponibile.

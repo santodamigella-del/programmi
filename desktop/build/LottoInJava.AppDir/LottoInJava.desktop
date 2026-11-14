@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Archivio Lotto
+Comment=Archivio estrazioni del Lotto, ritardatari e giocate
+Exec=LottoInJava
+Icon=lottoinjava
+Categories=Utility;
+Terminal=false

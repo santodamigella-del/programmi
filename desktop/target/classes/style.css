@@ -1,0 +1,230 @@
+/* LottoInJava · stile con temi (Blu scuro, Chiaro, Rosso fuoco).
+   Il blocco tra @THEME-BEGIN e @THEME-END contiene i colori del tema Blu scuro (predefinito):
+   per gli altri temi lo sostituisce ThemeManager. Tutto il resto usa solo queste variabili. */
+
+/* @THEME-BEGIN */
+.root {
+    -fx-base: #1E293B;
+    -fx-background: #0F172A;
+    -fx-control-inner-background: #1E293B;
+    -c-bg: #0F172A;
+    -c-panel: #1E293B;
+    -c-panel2: #111827;
+    -c-border: #334155;
+    -c-border2: #475569;
+    -c-text: #F8FAFC;
+    -c-muted: #94A3B8;
+    -c-title: #F59E0B;
+    -c-accent: #FBBF24;
+    -c-accent2: #F59E0B;
+    -c-header-a: #111827;
+    -c-header-b: #172554;
+    -c-bar: #2563EB;
+    -c-sel: #92400E;
+    -c-sel-text: #FFFFFF;
+    -c-popup-bg: #111827;
+    -c-popup-hover: #334155;
+    -c-win: #34D399;
+    -c-lost: #F87171;
+    -c-prim-a: #6D28D9;
+    -c-prim-b: #2563EB;
+    -c-prim-border: #A78BFA;
+    -c-prim-hover: #C084FC;
+    -c-prim-hover-border: #E879F9;
+    -c-toast-a: #241044;
+    -c-toast-b: #101B45;
+    -c-toast-border: #A855F7;
+    -c-toast-text: #E9D5FF;
+    -c-err-bg: #451A2A;
+    -c-err-border: #F87171;
+    -c-err-text: #FCA5A5;
+    -c-pop-a: #0B1028;
+    -c-pop-b: #21103D;
+    -c-asst-title: #E879F9;
+}
+/* @THEME-END */
+
+.root {
+    -fx-font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: -c-text;
+}
+.label { -fx-text-fill: -c-text; }
+.title { -fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: -c-title; }
+.subtitle, .hint { -fx-text-fill: -c-muted; }
+.hint { -fx-font-style: italic; -fx-font-size: 12px; }
+.strong { -fx-font-weight: bold; }
+.hot-text { -fx-font-weight: bold; -fx-text-fill: -c-accent; }
+
+.card {
+    -fx-background-color: -c-panel;
+    -fx-background-radius: 14;
+    -fx-border-color: -c-border;
+    -fx-border-radius: 14;
+    -fx-padding: 12;
+}
+.card-date { -fx-text-fill: -c-accent; -fx-font-weight: bold; -fx-font-size: 13px; }
+.wheel-name { -fx-font-weight: bold; -fx-font-size: 12px; }
+.wheel-nazionale { -fx-text-fill: -c-accent; }
+
+.ball {
+    -fx-background-color: linear-gradient(to bottom, #FBBF24, #D97706);
+    -fx-background-radius: 18;
+    -fx-border-color: #B45309;
+    -fx-border-radius: 18;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+.ball, .ball .text { -fx-text-fill: #0F172A; }
+.ball-hit {
+    -fx-background-color: linear-gradient(to bottom, #34D399, #047857);
+    -fx-border-color: #064E3B;
+}
+.ball-hit { -fx-text-fill: #FFFFFF; }
+
+.button {
+    -fx-background-color: -c-panel;
+    -fx-border-color: -c-border;
+    -fx-text-fill: -c-text;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 12px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+.button:hover { -fx-border-color: -c-accent2; }
+.button-primary {
+    -fx-background-color: linear-gradient(to right, -c-prim-a, -c-prim-b);
+    -fx-border-color: -c-prim-border;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(245,158,11,0.16), 7, 0.1, 0, 2);
+}
+.button-primary:hover { -fx-background-color: -c-prim-hover; -fx-border-color: -c-prim-hover-border; }
+
+.list-view { -fx-background-color: transparent; -fx-background-insets: 0; }
+.list-cell { -fx-background-color: transparent; -fx-padding: 4 2 4 2; }
+.list-cell:filled:hover, .list-cell:filled:selected { -fx-background-color: transparent; }
+.scroll-pane, .scroll-pane > .viewport { -fx-background-color: transparent; }
+
+.text-field, .combo-box-base, .spinner .text-field {
+    -fx-background-color: -c-panel;
+    -fx-border-color: -c-border;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: -c-text;
+}
+.combo-box-base, .text-field { -fx-padding: 5 8 5 8; }
+.progress-bar > .track { -fx-background-color: -c-border; }
+.progress-bar > .bar { -fx-background-color: -c-bar; }
+.progress-bar.hot > .bar { -fx-background-color: -c-accent2; }
+.row-clickable { -fx-cursor: hand; -fx-padding: 4 6 4 6; -fx-background-radius: 10; }
+.row-clickable:hover { -fx-background-color: -c-panel; }
+
+.status-win { -fx-text-fill: -c-win; -fx-font-weight: bold; }
+.status-lost { -fx-text-fill: -c-lost; }
+.report { -fx-font-family: "DejaVu Sans Mono", monospace; -fx-font-size: 12px; }
+
+/* Evidenziazione archivio: SPIA verde, RISULTATO rosso, PIÙ USCITI blu scuro (uguali in tutti i temi) */
+.ball-spy {
+    -fx-background-color: linear-gradient(to bottom, #34D399, #047857);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #064E3B;
+    -fx-border-width: 2;
+}
+.ball-cinquina {
+    -fx-background-color: linear-gradient(to bottom, #1E3A8A, #0B1437);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #93C5FD;
+    -fx-border-width: 2;
+}
+.ball-spy .text, .ball-result .text, .ball-cinquina .text { -fx-fill: white; }
+.ball-result {
+    -fx-background-color: linear-gradient(to bottom, #F87171, #B91C1C);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-color: #7F1D1D;
+    -fx-border-width: 2;
+}
+
+/* Menu e campi della finestra Tecniche: fondo opaco (niente trasparenze su Linux/JavaFX) */
+.combo-box, .choice-box {
+    -fx-background-color: -c-panel;
+    -fx-border-color: -c-border2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.combo-box .list-cell, .choice-box .label {
+    -fx-background-color: -c-panel;
+    -fx-text-fill: -c-text;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: -c-popup-bg;
+    -fx-control-inner-background: -c-popup-bg;
+    -fx-border-color: -c-border2;
+    -fx-background-insets: 0;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: -c-popup-bg;
+    -fx-text-fill: -c-text;
+    -fx-padding: 7 10 7 10;
+}
+.combo-box-popup .list-view .list-cell:filled:hover,
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: -c-popup-hover;
+    -fx-text-fill: -c-accent;
+}
+.text-area {
+    -fx-control-inner-background: -c-panel2;
+    -fx-background-color: -c-panel2;
+    -fx-text-fill: -c-text;
+    -fx-highlight-fill: -c-sel;
+    -fx-highlight-text-fill: -c-sel-text;
+    -fx-prompt-text-fill: -c-muted;
+}
+.text-area .content { -fx-background-color: -c-panel2; }
+.spinner {
+    -fx-background-color: -c-panel;
+    -fx-border-color: -c-border2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.spinner .increment-arrow-button, .spinner .decrement-arrow-button { -fx-background-color: -c-border; }
+.spinner .increment-arrow, .spinner .decrement-arrow { -fx-background-color: -c-text; }
+.check-box { -fx-text-fill: -c-text; -fx-font-size: 11px; }
+.check-box .label { -fx-text-fill: -c-text; }
+.check-box .box { -fx-background-color: -c-panel; -fx-border-color: -c-border2; }
+.check-box:selected .mark { -fx-background-color: -c-accent; }
+.alert .dialog-pane, .dialog-pane { -fx-background-color: -c-bg; }
+.dialog-pane .label { -fx-text-fill: -c-text; }
+
+/* Header compatto */
+.app-header {
+    -fx-background-color: linear-gradient(to right, -c-header-a, -c-header-b);
+    -fx-border-color: transparent transparent -c-border transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Assistente cartoon Notte Neon */
+.assistant-toast {
+    -fx-background-color: linear-gradient(to right, -c-toast-a, -c-toast-b);
+    -fx-border-color: -c-toast-border;
+    -fx-border-width: 1.2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 10 12 10 12;
+    -fx-text-fill: -c-toast-text;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.assistant-error { -fx-background-color: -c-err-bg; -fx-border-color: -c-err-border; -fx-text-fill: -c-err-text; }
+.assistant-popup {
+    -fx-background-color: linear-gradient(to bottom, -c-pop-a, -c-pop-b);
+    -fx-border-color: -c-toast-border;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 16;
+    -fx-background-radius: 16;
+}
+.assistant-title { -fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: -c-asst-title; }

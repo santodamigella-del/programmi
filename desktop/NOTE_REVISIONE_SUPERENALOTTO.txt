@@ -1,0 +1,25 @@
+REVISIONE LOTTO + SUPERENALOTTO
+
+Lotto:
+- La finestra di evidenziazione include i colpi disponibili dei cicli non ancora completi alla fine dello storico.
+- I cicli incompleti sono visibili ma non vengono conteggiati come cicli statistici completi.
+- Quando si attiva una previsione, il filtro ruota passa a tutte le ruote, per consentire il controllo delle altre ruote.
+
+SuperEnalotto:
+- Corretto un errore di compilazione nel punteggio delle combinazioni ciclometriche: usa il parametro eventi effettivamente disponibile.
+- Normalizzazione della ciclometria riallineata ai pesi e alla scala 0-100 del main.py: frequenza numero 45%, anello 30%, stabilità 15%, lift 10%.
+- Aggiunto ranking degli anelli con frequenza attesa, presenza negli eventi e lift.
+- Il confronto walk-forward riporta differenza statistica-casuale e statistica-post-spia, intervalli bootstrap e test di randomizzazione appaiato.
+- Aggiunto un backtest ciclometrico TOP 5 contro casuale, usando solo lo storico precedente a ogni evento e valutando i colpi successivi disponibili.
+- Aggiunto il pulsante “Verifica sadica + holdout”: TOP 6 statistico contro sestina casuale, previsione walk-forward su storico precedente, split 70/30 degli eventi validi, intervallo bootstrap e test di randomizzazione sul solo holdout.
+- Chiarita la legenda cromatica dell’archivio: spia verde, candidati effettivamente usciti nei colpi successivi rossi; la colorazione resta attivabile/disattivabile e include i cicli recenti aperti.
+- Restano separati l'archivio SuperEnalotto e l'archivio Lotto.
+
+Verifiche:
+- Parsing sintattico Java dei 14 file desktop: superato con JDK 21 (inclusa la nuova verifica holdout). Harness isolato della verifica holdout: compilato ed eseguito su 500 estrazioni sintetiche.
+- I metodi ciclometrici modificati sono stati compilati e provati su un archivio sintetico di 500 estrazioni.
+- Integrità ZIP: verificata dopo il packaging.
+- Maven e JavaFX non sono disponibili in questo ambiente; non si dichiara superata la compilazione Maven né testata la finestra grafica.
+
+Nota statistica:
+Il confronto è esplorativo. Le estrazioni sono casuali e le statistiche storiche non modificano le probabilità regolamentari.

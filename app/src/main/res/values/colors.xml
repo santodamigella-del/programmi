@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#0F172A</color>
+    <color name="primary_variant">#1E293B</color>
+    <color name="accent_gold">#F59E0B</color>
+    <color name="accent_gold_dark">#D97706</color>
+    <color name="accent_blue">#2563EB</color>
+
+    <color name="background_dark">#0F172A</color>
+    <color name="card_background">#1E293B</color>
+    <color name="card_stroke">#334155</color>
+
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_gold">#FBBF24</color>
+
+    <color name="ball_number">#0F172A</color>
+    <color name="ball_nazionale_text">#FFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

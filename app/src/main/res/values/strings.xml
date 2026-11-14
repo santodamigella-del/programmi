@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Archivio Lotto</string>
+    <string name="archive_title">Archivio Estrazioni del Lotto</string>
+    <string name="update_internet">Aggiorna da Internet</string>
+    <string name="last_update">Ultimo aggiornamento: %s</string>
+    <string name="search_hint">Cerca per data, concorso o numero (es. 90, BARI, 08/03/2025)…</string>
+    <string name="filter_all">Tutte le Ruote</string>
+    <string name="filter_ruota">Filtra Ruota</string>
+    <string name="no_extractions">Nessuna estrazione trovata</string>
+    <string name="updating">Aggiornamento in corso da Internet…</string>
+    <string name="details_title">Concorso N° %d</string>
+    <string name="share">Condividi</string>
+    <string name="close">Chiudi</string>
+
+    <string name="menu_import_csv">Carica File CSV</string>
+    <string name="menu_refresh">Aggiorna da Internet</string>
+    <string name="menu_sources">Info Fonti (Xaming/Lottologia)</string>
+    <string name="btn_import_csv">Carica CSV Archivio</string>
+</resources>

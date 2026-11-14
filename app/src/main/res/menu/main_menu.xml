@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_spy_search"
+        android:icon="@drawable/ic_search"
+        android:title="Ricerca Numero Spia"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_import_csv"
+        android:icon="@drawable/ic_upload_file"
+        android:title="@string/menu_import_csv"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_my_bets"
+        android:title="🎯 Le mie giocate"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ritardatari"
+        android:title="⏳ Ritardatari"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_quadro"
+        android:title="🧮 Quadro estrazionale"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/menu_refresh"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_rebuild_archive"
+        android:title="Ricostruisci archivio Lotto"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_clear_archive"
+        android:title="Cancella archivio Lotto"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sources"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_sources"
+        app:showAsAction="never" />
+
+</menu>
